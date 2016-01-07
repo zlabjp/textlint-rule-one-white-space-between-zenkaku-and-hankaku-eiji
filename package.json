@@ -1,0 +1,33 @@
+{
+  "name": "textlint-rule-one-white-space-between-zenkaku-and-hankaku-eiji",
+  "version": "1.0.0",
+  "description": "textlint rule that need one white space between Zenkaku and Hankaku Eiji",
+  "main": "lib/one-white-space-between-zenkaku-and-hankaku-eiji.js",
+  "scripts": {
+    "lint": "eslint **/*.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zlabjp/textlint-rule-one-white-space-between-zenkaku-and-hankaku-eiji.git"
+  },
+  "author": "Z Lab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zlabjp/textlint-rule-one-white-space-between-zenkaku-and-hankaku-eiji/issues"
+  },
+  "homepage": "https://github.com/zlabjp/textlint-rule-one-white-space-between-zenkaku-and-hankaku-eiji#readme",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "textlint",
+    "rule",
+    "japanese"
+  ],
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "mocha": "^2.3.4",
+    "textlint-tester": "^0.4.1"
+  }
+}
