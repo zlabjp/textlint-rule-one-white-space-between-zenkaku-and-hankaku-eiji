@@ -5,7 +5,7 @@
   "main": "lib/one-white-space-between-zenkaku-and-hankaku-eiji.js",
   "scripts": {
     "lint": "eslint **/*.js",
-    "test": "mocha"
+    "test": "mocha && npm run lint"
   },
   "repository": {
     "type": "git",
