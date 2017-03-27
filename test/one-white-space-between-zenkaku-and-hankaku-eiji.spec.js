@@ -22,7 +22,10 @@ tester.run("one-white-space-between-zenkaku-and-hankaku-eiji", rule, {
         "、Hello World。",
         "（Hello World）",
         "『Hello World』",
-        "【Hello World】"
+        "【Hello World】",
+        "> ハローワールドHello World",
+        "[ハローワールドHello World](http://example.dev)",
+        "![ハローワールドHello World](http://example.dev/img.png)"
     ],
     invalid: [
         {

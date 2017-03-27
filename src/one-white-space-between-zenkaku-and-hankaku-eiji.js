@@ -7,15 +7,22 @@
 
 "use strict";
 
+import { RuleHelper } from "textlint-rule-helper";
+
 const ZEN_HAN = /(?:[\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]|[\uD840-\uD87F][\uDC00-\uDFFF]|[ぁ-んァ-ヶ])[A-Za-z]/;
 const HAN_ZEN = /[A-Za-z](?:[\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]|[\uD840-\uD87F][\uDC00-\uDFFF]|[ぁ-んァ-ヶ])/;
 const ALLOW_CHARS = ["、", "。", "「", "」", "（", "）", "｛", "｝", "【", "】", "『", "』"];
 
 export default context => {
+    const helper = new RuleHelper(context);
     const { Syntax, getSource, RuleError, report } = context;
 
     return {
         [Syntax.Str](node) {
+            if (helper.isChildNode(node, [Syntax.Link, Syntax.Image, Syntax.BlockQuote])) {
+                return;
+            }
+
             const text = getSource(node);
             let err = false;
             let matches, index, c;
