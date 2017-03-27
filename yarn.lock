@@ -2750,6 +2750,12 @@ textlint-plugin-text@^1.0.1:
   dependencies:
     txt-to-ast "^1.0.2"
 
+textlint-rule-helper@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/textlint-rule-helper/-/textlint-rule-helper-2.0.0.tgz#95cb4696c95c4258d2e3389e9e64b849f9721382"
+  dependencies:
+    unist-util-visit "^1.1.0"
+
 textlint-scripts@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/textlint-scripts/-/textlint-scripts-1.2.2.tgz#cc4fba615d971d662a6b9989e0da1a0b8de9d1e2"
