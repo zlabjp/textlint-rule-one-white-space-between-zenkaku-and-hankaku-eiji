@@ -24,9 +24,6 @@
     "url": "https://github.com/zlabjp/textlint-rule-one-white-space-between-zenkaku-and-hankaku-eiji/issues"
   },
   "homepage": "https://github.com/zlabjp/textlint-rule-one-white-space-between-zenkaku-and-hankaku-eiji#readme",
-  "files": [
-    "lib"
-  ],
   "keywords": [
     "textlint",
     "rule",
@@ -35,7 +32,7 @@
   "devDependencies": {
     "eslint": "^3.18.0",
     "husky": "^0.13.3",
-    "mocha": "^2.3.4",
+    "mocha": "^3.2.0",
     "textlint-scripts": "^1.2.2"
   }
 }
