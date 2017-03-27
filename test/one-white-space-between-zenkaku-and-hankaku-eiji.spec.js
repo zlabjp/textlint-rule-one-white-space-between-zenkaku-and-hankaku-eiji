@@ -7,10 +7,10 @@
 
 "use strict";
 
-var rule = require("../lib/one-white-space-between-zenkaku-and-hankaku-eiji"),
-    TextLintTester = require("textlint-tester");
+import TextLintTester from "textlint-tester";
+const tester = new TextLintTester();
 
-var tester = new TextLintTester();
+import rule from "../src/one-white-space-between-zenkaku-and-hankaku-eiji.js";
 
 tester.run("one-white-space-between-zenkaku-and-hankaku-eiji", rule, {
     valid: [
@@ -30,6 +30,7 @@ tester.run("one-white-space-between-zenkaku-and-hankaku-eiji", rule, {
             errors: [
                 {
                     message: "全角文字と半角英字の間に半角スペースを入れます。",
+                    index: 1,
                     column: 8
                 }
             ]
@@ -39,6 +40,7 @@ tester.run("one-white-space-between-zenkaku-and-hankaku-eiji", rule, {
             errors: [
                 {
                     message: "全角文字と半角英字の間に半角スペースを入れます。",
+                    index: 1,
                     column: 11
                 }
             ]
